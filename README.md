@@ -4,4 +4,6 @@
 - >This is part of my Advance Java Programming subject.
 
 ## What does this repository include ????
-- >Abhi maja ayega na bhidu....
+1. Connection of Java code with MySQL CLI client to modify database created.
+2. Created a client-server architecture for two way interaction.
+3. Created UI uisng HTML and used Servlet API to extend web servers and create dynamic web content using HTTpServlet and WebServlet, also used **APACHE TOMCAT** Server to host and run java web application.
