@@ -1,0 +1,4 @@
+com\book\jsf\bean\Bookbean.class
+com\book\jsf\Main.class
+com\book\jsf\dao\BookDao.class
+com\book\jsf\model\Book.class

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>View Books</title>
+</h:head>
+<h:body>
+    <h1>List of Books</h1>
+
+    <h:dataTable value="#{bookBean.bookList}" var="book" border="1">
+        <h:column>
+            <f:facet name="header">ID</f:facet>
+            #{book.id}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Title</f:facet>
+            #{book.title}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Author</f:facet>
+            #{book.author}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Price</f:facet>
+            #{book.price}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Actions</f:facet>
+            <h:form>
+                <h:commandButton value="Delete" action="#{bookBean.deleteBook(book.id)}" />
+            </h:form>
+        </h:column>
+    </h:dataTable>
+
+    <br />
+    <h:link value="Add New Book" outcome="addBook.xhtml" /><br />
+    <h:link value="Back to Home" outcome="index.xhtml" />
+</h:body>
+
+</html>
